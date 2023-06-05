@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ul vs ol tag</title>
+    <style>
+        span , div {
+            border: 1px solid red;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--
+        ul : 순서 없는 목록 -> list style-type : disk(원) / cicle(원) , square(네모) , none
+        ol : 순서 있는 목록
+
+        인라인 태그 : a span , img -> 출력시 엔터가 들어가지 않음(옆으로 붙어서 출력)
+        블락 태그 : div, h1~h6 , ul , ol -> 아래로 출력됨 
+
+        # alt + shift + 화살표 : 복사
+    -->
+
+    <h3>인라인 태그 : 출력시 옆으로 출력됨 (엔터가 들어가지 않음) : span </h3>
+    
+    <span> 오늘 </span> <span> 날씨 </span> <span>맑음</span>
+    <hr align="left" width = 50% size = 5px color="green">
+    <h3>블락 태그 : 출력시 방향이 아래로 출력 : div</h3>
+    <div>오늘</div> <div>날씨</div> <div>맑음</div>
+    <br><br>
+    <hr align="left" width = 50% size = 5px color="green">
+    <h3> ul 태그 ( disk) </h3>
+    <ul style = "list-style-type: disc;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Lemon</li>
+    </ul>
+    <br><br>
+    <hr align="left" width = 40% size = 5px color="green">
+    <h3> ul 태그 ( cicle )</h3>
+    <ul style = "list-style-type: circle;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Lemon</li>
+    </ul>
+
+    <br><br>
+    <hr align="left" width = 40% size = 5px color="green">
+    <h3> ul 태그 ( square ) </h3>
+    <ul style = "list-style-type: square;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Lemon</li>
+    </ul>
+    <br><br>
+    <hr align="left" width = 40% size = 5px color="green">
+    <h3> ul 태그 ( none )</h3>
+    <ul style = "list-style-type: none;">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Lemon</li>
+    </ul>
+
+    <hr align="left" width = 70% size = 5px color="black">
+
+    <h3>ol 태그 : 순서있는 목록 출력 (번호)</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>React</li>
+    </ol>
+    <hr align="left" width = 40% size = 5px color="green">
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>React</li>
+    </ol>
+    <hr align="left" width = 40% size = 5px color="green">
+    <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+        <li>React</li>
+    </ol>
+
+    <hr size = "10px" color="red" >
+    <h3>실제 많이 사용하는 유형 (메뉴구성) : 블락 -> 인라인으로 변경</h3>
+    <ul style="list-style-type: none; display: inline-flex;">
+    <li>| 회원가입 | </li>
+    <li> 로그아웃 | </li>
+    <li> 회사소개 | </li>
+    <li> 약도 | </li>
+    <li> 로그인 | </li>
+    <li> 장바구니 | </li>
+    
+    </ul>
+
+
+</body>
+</html>

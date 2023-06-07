@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--
+        CSS 적용하는 3가지 방법
+        1.외부파일에서 불러들여서 적용
+            -자주 사용, 많이 사용하는 위주로 외부파일에 저장
+            모든 파일에서 공통으로 사용되는 스타일
+            -> head head사이에서 link:css 엔터 
+        2.내부 파일에서 적용
+
+        3.태그내에서 적용 -> 인라인에서 적용
+            -간단하게 태그내에서 적용
+    -->
+    <link type = "text/css" rel = "stylesheet" href = "css/external.css">
+
+    <style >
+        /* css주석 
+        내부파일에 css처리
+        */
+        p2 {
+            color:green;
+            font-size: 50px;
+            font-family: 돋움;
+            font-weight: 200; 
+            
+        }
+
+        span1 {
+            color: blue;
+            font-size: 20px;
+            font-family: 돋움체;
+        }
+
+        span2 {
+            color: rgb(red, green, blue);
+            font-size: 30px;
+            font-family: 궁서체;
+
+        }
+
+    </style>
+
+    <p1 style="color : red; font-size: 20px;"> 인라인에서 스타일 시트(css)적용</p1> <br><br>
+    <p2> 내부에서 스타일 시트(css) 적용</p2> <br><br>
+    <p3> 외부에서 스타일 시트(css) 적용</p3> <br><br>
+    
+    <hr color = "green" >
+    <pre>
+
+        <span1>    
+            우크라이나 남부의 카호우카 댐이 붕괴되면서 인근 주민들의 안전은 물론 환경과 농업에도 막대한 피해를 끼칠 우려가 높아지고 있다. 일부 전문가들은 1986년 4월 체르노빌 원전 사고 이후 우크라이나 최대의 환경 재난이 될 것이라고 경고했다.
+        </span1>
+        <span2>
+            루슬란 스트릴레츠 우크라이나 환경부 장관은 6일(현지시각) 카호우카 댐 붕괴 여파로 적어도 150t의 기름이 유출됐다며 인근 지역 생태계가 크게 손상될 것으로 우려된다며 밝혔다고 <로이터> 통신 등이 보도했다.
+        </span2>
+        스트릴레츠 장관은 “침수 영향이 몇주나 몇달 정도가 아니라 아주 오래 갈 것”이라며 환경 피해 복구에만 적어도 5000만유로(약 695억원)가 필요할 것으로 예상했다. 그는 드니프로강 하류에는 우크라이나 토착의 모래두더지쥐 등 다른 지역에서 볼 수 없는 야생 동물들이 적지 않다며 ‘흑해 생물권보호지역’ 등의 피해도 우려된다고 지적했다.
+    </pre>
+</body>
+</html>

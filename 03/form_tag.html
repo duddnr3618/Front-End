@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        form 태그 : 클라이언트의 정보를 서버에 전송하기 위한 태그
+            -게시판 / ID / Password ....
+            - method : 서버로 보낼 형식을 지정(get / post)
+                get : URL 마지막에 변수와 값을 넣어서 전송하는 방식 2048btye까지만 전송
+                        URL에 서버로 전송하는 변수와 값이 모두 노출 (보안에 취약)
+                        보안이 필요없는 환경에서 많이 사용됨(게시판)
+                        a태그에서도 get방식으로 많이 처리
+                        http://127.0.0.1:5500/03/login.do?id=abcd&pass=1234
+                        -http://127.0.0.1:5500/03 : 서버주소/포트
+                        -/login.do? : 요청정보
+                        -id=abcd&pass=1234 : 변수 = 인풋값
+
+
+                post : http 헤더 앞에 변수와 값을 넣어서 전송하는 방식
+                        URL에서 변수와 값이 보이지 않음(보안이 강함)
+                        주로 로그인 처리할때 많이 사용됨
+                        클라이언트의 파일을 서버로 전송시 사용
+                        클라이언트에서 서버로 데이터 전송시 용량제한이 없다.
+                        http://127.0.0.1:5500/03/login.do
+                        -URL에 변수와 인풋된 값이 노출되지 않는다.
+                        -
+
+            -action : 서버에게 호출할 요청페이지, 서버에게 보낼 명령
+            -name : 변수명을 지정 -> JavaScript / JSP / Timeleaf / React ... 
+
+    -->
+
+    <h3>Form 태그 -(get) 레이아웃 적용 x </h3>
+    <hr color = "blue">
+    <form name = "myForm" action="login.do" method="get">
+        아이디 : &nbsp; <input type = "text" name = "id"> &nbsp; <br><br>
+        패스워드 : &nbsp; <input type = "password" name = "pass"> &nbsp;<br><br>
+        <input type = "submit" value = "전송" >
+
+    </form>
+    <p />
+    <h3>Form 태그 -(post) 레이아웃 적용 x </h3>
+    <hr color = "blue">
+    <form name = "myForm" action="login.do" method="post">
+        아이디 : <input type = "text" name = "id"> <br><br>
+        패스워드 : <input type = "password" name = "pass"><br><br>
+        <input type = "submit" value = "전송" >
+
+    </form>
+
+</form>
+<p />
+<h3>Form 태그 -(get) 레이아웃(테이블) 적용 o </h3>
+<hr color = "blue">
+<form name = "myForm2" action="login.do" method="get">
+   <table >
+    <tr><td align = "right">아이디 : </td> <td> <input type = "text" name = "id"></td></tr>
+    <tr><td align="right">패스워드 : </td> <td><input type = "password" name = "pass"></td></tr>
+    <tr><td></td> <td align="center"><input type = "submit" value = "전송"></td></tr>
+   </table>
+
+</form>
+</body>
+</html>

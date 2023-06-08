@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+
+    <style>
+
+        /* 후손 선택자 : 공백으로 처리*/
+        div ul { color: red;} 
+        div h2 { color: red; background-color: pink;}
+        div li { color: red; background-color: orange;}
+
+        /* 자손 선택자 : >  -> 부모의 직계자손 */
+        body > div > h3 {color: green;}
+        body > p {color: gold ; background-color: brown;}
+        body > h3 > tel > home {color: aqua; background-color:darkblue ;}
+
+        /* 인접형제 선택자 : + -> 자식x 붙어있는 태그 */
+        body > p +abc {
+            background-color: darkmagenta;
+        }
+
+        /* 일반형제 선택자 : ~ */ 
+        body > p ~cde {
+            background-color: black;
+            color: white;
+        }
+
+        .group1 , .group2 {
+
+            color: orange; background-color: red; font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--
+        - 후손 선택자 ( ) : 선택자A 선택자B {스타일 적용} -> 선택자B는 선택자A 블락내부에 반드시 포함되어 있어야함.
+        <div : A><pre><h3 : B> </h3></pre></div>
+        
+        - 자손 선택자 (>) : 선택자A > 선택자B {스타일 적용} -> 선택자B는 선택자A의 직계자손
+        <div : A><p : B></p></div>
+        
+        - 인접형제 선택자 (+) : 선택자A + 선택자B {스타일 적용} -> 선택자A의 바로 인접해서 나타나는 선택자B
+        <div :A></div A> <div B></div B>
+        
+        - 일반형제 선택자 (~) : 선택자A ~ 선택자B {스타일 적용} -> 선택자 A의 같은 레벨의 선택자B
+        
+        
+        - 그룹 선택자 (,) : 선택자A , 선택자B {스타일 적용} -> 선택자A,B를 동시에 선택
+
+    -->
+<h3>선택자 : 후손(공백) / 자손(>) / 인접형제(+) / 일반형제(~) / 그룹(,) 선택자</h3>
+<hr color="green">
+<div>
+    <h2>후손 선택자 1 : 제목</h2>    <!-- div의 자손 -->
+    <ul>
+        <li>div의 자식 - 자식 (후손1)</li>
+        <li>div의 자식 - 자식 (후손2)</li>
+    </ul>
+</div>
+
+<h2> 후손 선택자2 : 제목</h2>
+<!-- 자손 선택자 -->
+<div>
+    <h3>자손 선택자 1 : div의 직계자손</h3>
+</div>
+
+<p> 자손 선택자 </p>
+<abc> 인접형제 선택자</abc>
+
+<h3>
+    <sno>123456</sno>
+    <std>홍길동</std>
+    <tel>
+        <office> 02-123-456 </office>
+        <home> 010-1234-5678 </home>
+    </tel>
+</h3>
+<cde> 일반형제 선택자 </cde>
+<div> 
+    <div class = "group1">그룹 선택자 1</div>
+</div>
+<div class ="group2"> 그룹 선택자 2 </div>
+</body>
+</html>

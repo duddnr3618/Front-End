@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS우선순위</title>
+    <!-- 외부에서 적용된 CSS -->
+    <link rel="stylesheet" href="css/override01.css">
+    <!-- 내부에서 적용된 CSS -->
+    <style>
+        p1 {
+            background-color: blue;
+        }
+
+        p2 {
+            font-size: 20px;
+            font-family: 궁서체;
+        }
+
+        p3 {
+            color: blueviolet; font-size: 20px; font-family: 궁서체;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!--
+        CSS 적용은 상속되고 , 누적되어서 적용
+        같은 항목에 대해서 충돌이 발생될수도 있다.(동일한 항목에 대해서 충돌이 발생)
+
+        -우선순위
+        1.브라우저에 기본설정된 CSS     <우선순위5>
+        2.외부(파일)에서 적용된 CSS     <우선순위4>
+        3.내부에서 적용된 CSS           <우선순위3>
+        4.인라인(태그내)에서 적용된CSS   <우선순위2>
+        5.!import 적용한 CSS            <우선순위1>
+            : 충돌 항목에서 !improt를 적용 , 가능하면 최소로 사용하는것이 베스트
+
+        태그 : < > 내부의 태그
+        엘리먼트 : 객체 , DOM(Doucumeent Object Model)
+
+    -->
+
+    <p1>CSS가 중복 적용된 경우 작동 (외부와 내부 충돌(중복o) -> 내부가 적용)</p1> <br><br>
+    <p2>CSS가 중복 적용된 경우 작동 (외부와 내부 충돌(중복x : 상속)-> 내부 외부 둘다 적용</p2> <br><br>
+    <p3 style = "background-color: aqua; font-size: 30px;">CSS가 중복 적용된 경우 작동(내부와 안라인태그 충돌(중복o)->중복된 것 중 우선순위 출력</p3> <br><br>
+    <p4 style=" background-color: aqua ;">CSS가 중복된 경우 작동 (!import를 적용)</p4>
+
+
+</body>
+</html>

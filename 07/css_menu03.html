@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0; padding: 0; /*모든 태그에는 margin,padding 값이 기본으로 들어가있다.*/
+
+        
+        }
+
+        li {list-style-type: none;}
+
+        a{text-decoration: none; font-size: 14px;}
+
+        .menu {
+            width: 800px;
+            /* border: 1px solid red; */
+            overflow: hidden;
+            margin: 20px;     /* 간격을 주고 중앙정렬*/
+            
+            
+            
+        }
+
+        .menu>li {
+            width: 20%;
+            text-align: center;
+            line-height: 40px;      /*라인과 라인의 간격*/
+            background-color: pink;
+
+            border-radius: 25px;
+
+        }
+
+        /*링크 파일의 글자색 변경*/
+        .menu a {
+            color: white;
+        }
+
+        .submenu>li {
+            line-height: 50px;
+            background-color: rgb(235, 109, 109);
+        }
+
+        /*기본출력시 서브메뉴는 화면에서 출력되면 안됨.*/
+        .submenu {
+           height: 0;   /* 높이가 0이므로 출력되지 않는다. */
+         /*  display: none;   회면에 출력되지 않는다. */
+           /* visibility: visible; */
+           overflow: hidden;    /* 범위를 벗어나는 부분을 보이지 않도록 처리 */
+
+        }
+
+        .menu >li:hover {
+            background-color: brown;
+            transition: 0.5s;
+        }
+        
+        .menu >li:hover .submenu {
+            height: 250px;
+            transition: 1s;
+            visibility: visible;
+        }
+
+
+/*  기본적으로 태그의 margin,padding 영역을 확인한다.
+        body {
+            border: 1px solid red;
+
+        }
+
+
+        li{
+            border: 1px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+        */
+    </style>
+</head>
+<body>
+    <!-- css를 사용한 상단메뉴 : 드롭다운메노 (top)
+    
+        div : 전체 구조를 파악하기 어렵다
+        ul li를 사용 : 구조파악하기 쉽다.
+    
+    -->
+    <ul class = "menu">
+        <li><a href="#">MENU 1</a>
+            <ul class ="submenu">
+                <li><a href="#">submenu 1</a></li>
+                <li><a href="#">submenu 2</a></li>
+                <li><a href="#">submenu 3</a></li>
+                <li><a href="#">submenu 4</a></li>
+                <li><a href="#">submenu 5</a></li>
+            </ul>
+        
+        </li> 
+
+        <li><a href="#">MENU 2</a>
+            <ul class ="submenu">
+                <li><a href="#">submenu 1</a></li>
+                <li><a href="#">submenu 2</a></li>
+                <li><a href="#">submenu 3</a></li>
+                <li><a href="#">submenu 4</a></li>
+                <li><a href="#">submenu 5</a></li>
+            </ul>
+        
+        </li> 
+
+        <li><a href="#">MENU 3</a>
+            <ul class ="submenu">
+                <li><a href="#">submenu 1</a></li>
+                <li><a href="#">submenu 2</a></li>
+                <li><a href="#">submenu 3</a></li>
+                <li><a href="#">submenu 4</a></li>
+                <li><a href="#">submenu 5</a></li>
+            </ul>
+        
+        </li>  
+
+        <li><a href="#">MENU 4</a>
+            <ul class ="submenu">
+                <li><a href="#">submenu 1</a></li>
+                <li><a href="#">submenu 2</a></li>
+                <li><a href="#">submenu 3</a></li>
+                <li><a href="#">submenu 4</a></li>
+                <li><a href="#">submenu 5</a></li>
+            </ul>
+        
+        </li> 
+
+        <li><a href="#">MENU 5</a>
+            <ul class ="submenu">
+                <li><a href="#">submenu 1</a></li>
+                <li><a href="#">submenu 2</a></li>
+                <li><a href="#">submenu 3</a></li>
+                <li><a href="#">submenu 4</a></li>
+                <li><a href="#">submenu 5</a></li>
+            </ul>
+        
+        </li>  
+
+    </ul>
+
+</body>
+</html>

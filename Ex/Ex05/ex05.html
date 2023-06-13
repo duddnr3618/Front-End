@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .clear {
+            clear:both
+        }
+        #wrap {
+            width: 970px;
+            margin: 0 auto;
+        }
+
+        header {
+           height: 100px ;
+           position: relative;
+
+        }
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+    
+        #menu1>li {
+            position: absolute;
+            top: 10px;
+            float: left;
+        }
+        #menu1>ul>li {
+            list-style-type: none;
+            float: left;
+        }
+        #menu1>ul>li>a {
+            text-decoration: none;
+            color: black;
+            
+        }
+
+        #menu2 {
+            width: 757px;
+            height: 38px;
+            background-image:url("img/main_menu_bg.png");
+            background-repeat: no-repeat;
+            position:absolute;
+            top: 40px;
+            left: 210px;
+        }
+        #menu2 li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 12px 30px 0 50px;
+            font-size: 13px;
+        }
+        #menu2 a:link {
+            text-decoration: none;
+            color:#ffffff;
+        }
+
+        #menu2 a:hover {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        #menu2 a:visited {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        #menu2 a:active {
+            text-decoration: none;
+            color: #ffffff
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+            <a id = "logo" href = "#"><img src="img/logo.png"></a>
+       
+        <div id = "menu1">
+            <ul>
+                <li><a href = "#">HOME  |</a></li>
+                <li><a href = "#">LOGIN  |</a></li>
+                <li><a href = "#">JOIN  |</a></li>
+                <li><a href = "#">NOTICE</a></li>
+                
+            </ul>
+        </div>
+
+        <div id = "menu2">
+            <ul>
+                <li><a href = "#">자유게시판</a></li>
+                <li><a href = "#">기타연주</a></li>
+                <li><a href = "#">공동 구매</a></li>
+                <li><a href = "#">연주회 안내</a></li>
+                <li><a href = "#">회원 게시판</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <aside id="aside1"></aside>
+        <aside id="aside1"></aside>
+        <div id="main1"></div>
+        
+        <div id = "notice">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id = "free">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div id = "youtube">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <span></span>
+        <span></span>
+        <span></span>
+    </footer>
+</body>
+
+</html>

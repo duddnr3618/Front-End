@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        #header {
+            width: 1500px;
+            height: 100px;
+            display: flex;
+            border: 1px solid black;
+            margin: 0 auto;
+
+        }
+
+        #logo {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: white;
+        }
+
+        #search {
+            width: 30%;
+            height: 100%;
+            margin-left: 150px;
+            margin-top: 40px;
+
+        }
+
+        #topmenu {
+            width: 50%;
+            height: 100%;
+            margin-top: 40px;
+            margin-left: 300px;
+
+        }
+
+        #topmenu li {
+            display: inline-block;
+            margin: 15px;
+
+        }
+
+        #topmenu li a {
+            color: black;
+        }
+
+
+        #main {
+            width: 1500px;
+            margin: 0 auto;
+        }
+
+        #menu {
+            background-color: gray;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        #menu ul li {
+            float: left;
+            margin-left: 50px;
+
+        }
+
+        #menu ul li a {
+            color: white;
+            font-size: 15px;
+            margin-left: 150px;
+        }
+
+        #mainmenu {
+            width: 100%;
+            height: 500px;
+            margin: 0 auto;
+            border: 1px solid red;
+            display: flex
+        }
+
+        #category {
+            width: 70%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        #c1 {
+            width: 30%;
+            background-color: yellowgreen;
+            height: 10%;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        #category table {
+            width: 30%;
+            height: 90%;
+        }
+
+        #img1 {
+            width: 40%;
+            height: 100%;
+            border: 1px solid red;
+
+        }
+
+        #img11 {
+            width: 100%;
+            height: 100%;
+        }
+
+        #info {
+            width: 30%;
+            height: 100%;
+        }
+        
+        #notice {
+            border: 1px solid red;
+            width: 100%;
+            height: 50%;
+        }
+
+        #notice ul li {
+            list-style-type: disc;
+            margin-left: 50px;
+        }
+
+        #n1 {
+            text-align: center;
+            color: greenyellow;
+            font-size: 20px;
+            height: 20%;
+        }
+
+        #event {
+            height: 50%;
+            border: 1px solid red;
+        }
+
+        #e1 {
+            font-size: 20px;
+            color: greenyellow;
+            text-align: center;
+            height: 20%;
+        }
+
+        #img2 {
+            width: 100%;
+            height: 80%;
+        }
+
+        #centerimg {
+         
+        }
+
+        #img3 {
+            width: 100%;
+        }
+
+        #sp {
+            width: 1500px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="./img/logo.gif">
+        </div>
+
+        <div id="search">
+            <span>Search</span>
+            <input type="text">
+            <input type="button" value="검색">
+
+        </div>
+
+        <div id="topmenu">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">마이페이지</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="menu">
+            <ul>
+                <li><a href="#">상세페이지</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">고객 갤러리</a></li>
+                <li><a href="#">주문배송</a></li>
+                <li><a href="#">자주 하는 질문</a></li>
+            </ul>
+        </div>
+
+        <div id="mainmenu">
+
+            <div id="category">
+                <div id="c1">CATEGORY ITEM</div>
+                <table border>
+                    <tr>
+                        <td>생활아트</td>
+                    </tr>
+                    <tr>
+                        <td>캔버스 아트</td>
+                    </tr>
+                    <tr>
+                        <td>사진 벽지</td>
+                    </tr>
+                    <tr>
+                        <td>창문형/현관문형</td>
+                    </tr>
+                    <tr>
+                        <td>포인트 벽지</td>
+                    </tr>
+                    <tr>
+                        <td>세계지도</td>
+                    </tr>
+                    <tr>
+                        <td>앤티크 세계지도 뱍지</td>
+                    </tr>
+                    <tr>
+                        <td>입체 세계지도 벽지</td>
+                    </tr>
+                    <tr>
+                        <td>어린이방 세계지도</td>
+                    </tr>
+                    <tr>
+                        <td>쪽자형 롤스크린</td>
+                    </tr>
+                    <tr>
+                        <td>맞춤제작 결제창</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id = "centerimg"><img id = "img3" src="./img/new_03.jpg"></div>
+
+            <div id="info">
+                <div id="notice">
+                    <div id = "n1">NOTICE</div>
+                    <hr>
+                    <ul>
+                        <li>폭설로 인한 배송지연 안내</li>
+                        <li>폭설로 인한 배송지연 안내</li>
+                        <li>폭설로 인한 배송지연 안내</li>
+                        <li>폭설로 인한 배송지연 안내</li>
+                        <li>폭설로 인한 배송지연 안내</li>
+                        <li>폭설로 인한 배송지연 안내</li>
+                    </ul>
+                </div>
+            
+                <div id="event">
+                    <div id = "e1">THE WEEK`S EVENT</div>
+                    <hr>
+                    <div><img id = "img2" src="./img/week_event_img.gif"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id = "sp">
+
+    </div>
+    <div id="footer"></div>
+</body>
+
+</html>

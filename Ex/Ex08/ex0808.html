@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0; list-style: none; text-decoration: none;}
+        body {color: #444444; font-size: 12px; background-color: #f2f0f0;}
+        .clear {clear: both;}
+        
+        header{height: 128px;}
+        #top {width: 990px; margin: 0 auto;}
+        #logo {float: left; margin: 30px 0 0 0 ;}
+        /* 검색 */
+        #search {float: left; font-family: sans-serif; font-size: 12px; color: #96c11f; margin: 40px 0 0 150px;}
+        #search_title{float: left; margin-top: 6px;}
+        #search_form{float: left;}
+        #search_form input{width: 80px; height: 16px; border: 0; background-color: #f2f0f0; border-bottom: solid 1px #cccccc;}
+        #search_button{float:left; margin: 3px 0 0 3px;}
+        /* 상단메뉴 */
+        #top_menu{float: left; margin-top: 45px;}
+        #top_menu li {display: inline; margin-left: 10px;}
+        /* 메인메뉴 */
+        #main_menu{height: 38px; margin-top: 15px; background-color: #4e4c4d;}
+        #main_menu ul {width: 990px; margin: auto; padding-top: 12px; text-align: center;}
+        #main_menu li {display: inline; margin:0 57px;}
+        #main_menu li a{color: #ffffff;}
+        
+        /*메인 콘텐츠*/
+        #main {width: 990px; margin: auto;}
+        /*좌측카테고리 + 메인이미지 + 공지사항 + 주간이벤트*/
+        #cat1 {width: 215px; float: left; margin-top: 15px; font-weight:bold;}
+        #cat_title{padding: 12px; background-color: #96c11f; color: #ffffff; text-align: center;}
+        #cat1 il {color: #666666; padding: 7px 0 7px 30px; border-bottom: solid 1px #cccccc;}
+        #cat2{float: left; margin-top: 15px;}
+        #cat3{width: 236px; float: left; margin-top: 15px;}
+        #lastest_notice {width: 239px; height: 161px; background-image: url("./img/latest_notice.gif"); background-repeat:no-repeat;}
+        #lastest_notice ul {padding: 42px 0 0 30px; list-style-image: url(./img/blue_dot.gif);}
+        #week_event{width: 239px; height: 191px; margin-top: 11px; background-image: url(./img/week_event.gif);}
+        #week_event img {margin: 58px 0 0 22px;}
+        /*special shop */
+        #special_shop {width: 592px; height: 389px; margin-top: 20px; float: left; background-image: url("./img/special_shop.gif"); background-repeat: no-repeat;}
+        #special_shop ul {margin: 60px 0 0 25px;}
+        #special_shop li {display: inline; margin: 0 2px;}
+        #special_shop img {padding: 20px; border: 1px solid #cccccc;}
+        #special_banner{float:left; margin: 19px 0 0 5px;}
+        #special_banner div{width: 392px; height: 129px; margin-top: 1px;}
+        #banner1{background-image: url("./img/landscape.gif"); background-repeat: no-repeat;}
+        #banner2{background-image: url("./img/point_wallpaper.gif"); background-repeat: no-repeat;}
+        #banner3{background-image: url("./img/children.gif"); background-repeat: no-repeat;}
+        #banner1 ul{padding: 6px 0 0 132px;}
+        #banner1 li{display: inline;}
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <section id = "top">
+            <a id = "logo" href="#"><img src="./img/logo.gif"></a>
+
+            <div id = "search">
+                <div id = "search"_title>SEARCH</div>
+                <div id ="search_form"><input type="text"></div>
+                <div id = "search_button"><img src="./img/btn_search.gif"></div>
+            </div>
+
+            <nav id = "top_menu">
+                <ul>
+                    <li class = "green"><a href="#">로그인</a></li>
+                    <li class = "green"><a href="#">회원가입</a></li>
+                    <li ><a href="#">마이페이지</a></li>
+                    <li ><a href="#">이용안내</a></li>
+                    <li ><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div class = "clear"></div>
+        </section>
+        <nav id ="main_menu">
+            <ul>
+                <li><a href="#">상세페이지</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">고객 갤러리</a></li>
+                <li><a href="#">주문배송</a></li>
+                <li><a href="#">자주하는 질문</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id = "main">
+        <section id = "cat1">
+            <div id = "cat_title"> CATEGORY ITEM</div>
+            <ul>
+                <li>생활아트</li>
+                <li>캔버스 아트</li>
+                <li>사진 벽자</li>
+                <li>창문형/현관문형</li>
+                <li>포인트 벽지</li>
+                <li>세계지도</li>
+                <li>앤티크 세계 지도 벽지</li>
+                <li>입체 세계지도 벽지</li>
+                <li>어린이방 세계지도</li>
+                <li>족자형 롤스크린</li>
+                <li>맞춤제작 결제창</li>
+            </ul>
+        </section> <!-- section cat1 --> 
+        <section id = "cat2">
+            <img src="./img/main_img.gif">
+        </section> <!-- section cat2 -->
+        <section id ="cat3">
+            <div id ="lastest_notice">
+                <ul>
+                    <li>폭설로 인한 배송지연 안내</li>
+                    <li>폭설로 인한 배송지연 안내</li>
+                    <li>폭설로 인한 배송지연 안내</li>
+                    <li>폭설로 인한 배송지연 안내</li>
+                    <li>폭설로 인한 배송지연 안내</li>
+                    <li>폭설로 인한 배송지연 안내</li>
+                    <li>폭설로 인한 배송지연 안내</li>
+                </ul>
+            </div>
+            <div id = "week_event">
+                <img src="./img/week_event_img.gif">
+            </div>
+        </section> <!-- section cat3-->
+    </section> <!-- section cat3-->
+
+    <section id = "special_shop">
+        <ul>
+            <li><img src="./img/special_img1.gif"></li>
+            <li><img src="./img/special_img2.gif"></li>
+        </ul>
+    </section> <!-- sectiom special shop-->
+
+    <section id = "special_banner">
+        <div id = "banner1">
+            <ul>
+                <li><img src="./img/landscape_img1.gif"></li>
+                <li><img src="./img/landscape_img2.gif"></li>
+            </ul>
+        </div>
+
+        <div id = "banner2">
+            <ul>
+                <li><img src="./img/point_wallpaper_img1.gif"></li>
+                <li><img src="./img/point_wallpaper_img2.gif"></li>
+            </ul>
+        </div>
+
+        <div id = "banner3">
+            <ul>
+                <li><img src="./img/children_img1.gif"></li>
+                <li><img src="./img/children_img2.gif"></li>
+            </ul>
+        </div>
+    </section> <!-- section special banner -->
+
+</body>
+</html>

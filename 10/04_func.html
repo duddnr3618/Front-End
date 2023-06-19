@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //무명함수
+        var printMsg = function (msg) {
+            document.write ("무명함수 : " + msg + "<br>")
+        }
+
+        //기본함수
+        function printMsg(msg) {
+            document.write ("기본함수 : " + msg + "<br>")
+            
+        }
+
+        //함수 호출 ->동일한 함수 호출시 무명함수가 우선으로 호출
+        printMsg("호출 했습니다.");
+
+
+    </script>
+
+</head>
+<body>
+    <!-- 
+
+     -->
+</body>
+</html>

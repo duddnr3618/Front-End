@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        var kdata = ['서울','부산','구포','대구','대전'];
+        var str1 = kdata.splice(1,2);   //1,2포함
+
+        document.write(str1 + "<p/>");      //부산 구포
+        document.write(kdata + "<p/>");     //서울,대구,대전
+
+        var str2 = kdata.splice(1,1,'강릉','세종');
+        
+        document.write(str2 + "<p/>");       //구포
+        document.write(kdata + "<p/>");      //서울,강릉,세종,대전
+
+        //특정 자리수에서 마지막까지 자름 
+        var str3 = kdata.splice (2,Number.MAX_VALUE);
+        document.write(str3);
+
+    </script>
+
+</head>
+<body>
+ 
+    <!-- 
+
+        splice : 배열에 원소를 추가 / 제거
+        -> splice이후 원본에 추가/제거가 된다.
+
+     -->
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //배열 선언
+        var arrdata = [];
+
+        //배열값을 저장 및 출력 하는 함수 
+        function insertArr () {
+            for ( var i = 0 ; i <100 ; i++) {
+                arrdata[i] = i+1 ;
+                
+            }
+
+            oddArr ();
+        }
+
+        //홀수 배열방의 데이터는 0으로 만드는 함수
+        function oddArr () {
+            for (var i = 0 ; i < arrdata.length ; i++) {
+                if (i % 2 ==0) {
+                    arrdata[i] = 0;
+                }
+            }
+
+            selectArr () ;
+        }
+
+        //배열을 출력하는 함수
+        function selectArr () {
+            for (var i = 0 ; i < arrdata.length ; i++) {
+                document.write (arrdata[i] + " ");
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    
+    <button onclick="insertArr()">클릭시 작동</button>
+
+</body>
+</html>

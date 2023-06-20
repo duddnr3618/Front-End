@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var kdata = ['서울','부산','대구','인천','대전','세종'];
+        
+        //서울(-6) 부산(-5) 대구(-4) 인천(-3) 대전(-2) 세종(-1)
+        var str1 = kdata.slice(0,4);
+        var str2 = kdata.slice(2,-1);
+
+        //str1 : 0~3번 까지 잘라서 저장됨 -> 서울 부산 대구 인천
+        document.write(str1 + "<br>");
+
+        //str2 : 2번방 ~ -1번방 전 까지출력 ->대구 인천 대전
+        document.write(str2);
+        
+
+    </script>
+</head>
+<body>
+
+    <!-- 
+        slice () : 특정범위의 값을 잘라내서 새로운 배열에 저장하는 메소드
+        index : 0, 1, 2  왼쪽 첫번째 기준으로 오른쪽으로 이동
+        index : -1 , -2 , -3 오른쪽의 마지막방을 기준으로 왼쪽으로 이동
+
+     -->
+</body>
+</html>

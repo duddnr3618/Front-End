@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="jquery-3.7.0.min.js"></script>
+    
+
+     <script>
+        //JQuery 코드 블락
+        $(document).ready (function() {
+            $("button.b1").click(function () {
+                $("img").animate( {width:"100px"})
+            });
+
+            $("button.b2").click(function () {
+                $("img").animate( {width:"200px"})
+            });
+
+            $("button.b3").click(function () {
+                $("img").animate( {width:"300px"})
+            });
+
+
+
+        });
+
+
+     </script>
+
+     <style>
+
+        .cssPic { height: 430px; text-align: center; border: 1px solid red;}
+        .cssPic img {width: 250px;}
+     </style>
+</head>
+<body>
+    
+    <!-- 
+        animate () 메소드
+            $(선택자).animate (속성 [,지속시간] );
+            속성 : 변경할 css 속성 및 속성 값을 지정
+            지속시간 : slow, fast, ms, ...
+     -->
+
+     <div class = "cssPic">
+        버튼을 클릭하면 그림의 크기가 변경됩니다. <p />
+        <button class = "b1">가로 100px </button>
+        <button class = "b2">가로 200px </button>
+        <button class = "b3">가로 300px </button>
+        <p />
+        <img name = "pic1" src="../img/pic1.jpg">
+     </div>
+
+</body>
+</html>

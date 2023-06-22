@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="jquery-3.7.0.min.js"></script>
+    
+
+     <script>
+        //JQuery 코드 블락
+        $(document).ready (function() {
+            $("button.add").click(function () {
+                $("h1,h2,p").addClass("blue");
+                $("div").addClass("improtant");
+            });
+
+            $("button.remove").click(function () {
+                $("h1,h2,p").removeClass("blue");
+                $("div").removeClass("improtant");
+            });
+
+
+
+        });
+     </script>
+
+     <style>
+        .important {font-weight: bold; font-size: xx-large; } 
+        .blue {color: blue;}
+     </style>
+</head>
+<body>
+    <!-- 
+        JQuery에서 CSS 컨트롤
+            addClass () : 요소 (element)에서 class를 추가함
+            removeClass() : 요소 (element)에서 class를 제거함
+            toggleClass() : 요소 (element)에서 class를 추가/제거 를 반복함
+            css() : 선택한 요소(element)의 스타일 속성을 설정하거나 반환한다.
+            widh() : 가로 크기를 반환 (마진,패딩 ,경계(볼더) 제외)
+            padding() : 
+
+     -->
+
+    <h1>HMTL</h1>
+    <h2>CSS3</h2>
+    <p>자바스크립트</p>
+    <div>자이 퀘리</div>
+    <button class = "add">CSS 적용</button>
+    <button class = "remove">CSS 해제</button>
+    
+</body>
+</html>
